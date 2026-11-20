@@ -46,7 +46,7 @@ nslookup google.com            # indirizzi ip di google
 ```bash
 exit                           # esce dalla shell del pc aperto e torna nella shell di Kathara
 ip addr                        # mostra ip di pc1
-ping <ip pc2>                  # misura il ping tra due pc (serve per verificare se sono connessi) -> NOTA: scrivere tra le "<>" l'indirizzo ip del pc2
+ping <ip pc2>                  # misura il ping tra due pc (serve per verificare se sono connessi) -> NOTA: scrivere tra le "<>"l'indirizzo ip del pc2
 traceroute <ip pc2>            # mostra il percorso per raggiungere pc2 -> NOTA: scrivere tra le "<>" l'indirizzo ip del pc2
 route                          # mostra la tabella di routing di pc1
 ```
