@@ -1,0 +1,7 @@
+ip a add 192.168.1.101/24 dev eth0
+ip link set eth0 up
+
+ip a add 192.168.2.100/24 dev eth1
+ip link set eth1 up
+
+route add default gw 192.168.1.100 dev eth0

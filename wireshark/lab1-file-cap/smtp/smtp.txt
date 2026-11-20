@@ -1,0 +1,61 @@
+reading from file smtp/smtp.pcap, link-type EN10MB (Ethernet)
+08:06:07.492060 IP 10.10.1.4.56166 > 10.10.1.1.53: 31062+ A? mail.patriots.in. (34)
+08:06:07.526085 IP 10.10.1.1.53 > 10.10.1.4.56166: 31062 2/2/0 CNAME patriots.in., A 74.53.140.153 (100)
+08:06:07.529046 IP 10.10.1.4.1470 > 74.53.140.153.25: Flags [S], seq 2126795696, win 65535, options [mss 1460,nop,nop,sackOK], length 0
+08:06:07.875996 IP 74.53.140.153.25 > 10.10.1.4.1470: Flags [S.], seq 2934727087, ack 2126795697, win 5840, options [mss 1460,nop,nop,sackOK], length 0
+08:06:07.876028 IP 10.10.1.4.1470 > 74.53.140.153.25: Flags [.], ack 1, win 65535, length 0
+08:06:08.219663 IP 74.53.140.153.25 > 10.10.1.4.1470: Flags [P.], seq 1:182, ack 1, win 5840, length 181: SMTP: 220-xc90.websitewelcome.com ESMTP Exim 4.69 #1 Mon, 05 Oct 2009 01:05:54 -0500 
+08:06:08.224809 IP 10.10.1.4.1470 > 74.53.140.153.25: Flags [P.], seq 1:10, ack 182, win 65354, length 9: SMTP: EHLO GP
+08:06:08.565386 IP 74.53.140.153.25 > 10.10.1.4.1470: Flags [.], ack 10, win 5840, length 0
+08:06:08.566183 IP 74.53.140.153.25 > 10.10.1.4.1470: Flags [P.], seq 182:319, ack 10, win 5840, length 137: SMTP: 250-xc90.websitewelcome.com Hello GP [122.162.143.157]
+08:06:08.568729 IP 10.10.1.4.1470 > 74.53.140.153.25: Flags [P.], seq 10:22, ack 319, win 65217, length 12: SMTP: AUTH LOGIN
+08:06:08.911081 IP 74.53.140.153.25 > 10.10.1.4.1470: Flags [P.], seq 319:337, ack 22, win 5840, length 18: SMTP: 334 VXNlcm5hbWU6
+08:06:08.911655 IP 10.10.1.4.1470 > 74.53.140.153.25: Flags [P.], seq 22:52, ack 337, win 65199, length 30: SMTP: Z3VycGFydGFwQHBhdHJpb3RzLmlu
+08:06:09.253544 IP 74.53.140.153.25 > 10.10.1.4.1470: Flags [P.], seq 337:355, ack 52, win 5840, length 18: SMTP: 334 UGFzc3dvcmQ6
+08:06:09.254118 IP 10.10.1.4.1470 > 74.53.140.153.25: Flags [P.], seq 52:70, ack 355, win 65181, length 18: SMTP: cHVuamFiQDEyMw==
+08:06:09.613798 IP 74.53.140.153.25 > 10.10.1.4.1470: Flags [P.], seq 355:385, ack 70, win 5840, length 30: SMTP: 235 Authentication succeeded
+08:06:09.614414 IP 10.10.1.4.1470 > 74.53.140.153.25: Flags [P.], seq 70:106, ack 385, win 65151, length 36: SMTP: MAIL FROM: <gurpartap@patriots.in>
+08:06:09.956765 IP 74.53.140.153.25 > 10.10.1.4.1470: Flags [P.], seq 385:393, ack 106, win 5840, length 8: SMTP: 250 OK
+08:06:09.957250 IP 10.10.1.4.1470 > 74.53.140.153.25: Flags [P.], seq 106:145, ack 393, win 65143, length 39: SMTP: RCPT TO: <raj_deol2002in@yahoo.co.in>
+08:06:10.319708 IP 74.53.140.153.25 > 10.10.1.4.1470: Flags [P.], seq 393:407, ack 145, win 5840, length 14: SMTP: 250 Accepted
+08:06:10.320203 IP 10.10.1.4.1470 > 74.53.140.153.25: Flags [P.], seq 145:151, ack 407, win 65129, length 6: SMTP: DATA
+08:06:10.661679 IP 74.53.140.153.25 > 10.10.1.4.1470: Flags [P.], seq 407:463, ack 151, win 5840, length 56: SMTP: 354 Enter message, ending with "." on a line by itself
+08:06:10.692743 IP 10.10.1.4.1470 > 74.53.140.153.25: Flags [.], seq 151:1611, ack 463, win 65073, length 1460: SMTP: From: "Gurpartap Singh" <gurpartap@patriots.in>
+08:06:10.692786 IP 10.10.1.4.1470 > 74.53.140.153.25: Flags [.], seq 1611:3071, ack 463, win 65073, length 1460: SMTP: ft-com:office:word" =
+08:06:10.692804 IP 10.10.1.4.1470 > 74.53.140.153.25: Flags [.], seq 3071:4531, ack 463, win 65073, length 1460: SMTP: 
+08:06:10.692823 IP 10.10.1.4.1470 > 74.53.140.153.25: Flags [.], seq 4531:5991, ack 463, win 65073, length 1460: SMTP: , athlon, athlon-tbird, athlon-4, athlon-xp, =
+08:06:10.695115 IP 192.168.1.1 > 10.10.1.4: ICMP 74.53.140.153 unreachable - need to frag (mtu 1492), length 556
+08:06:10.695170 IP 10.10.1.4.1470 > 74.53.140.153.25: Flags [.], seq 151:1603, ack 463, win 65073, length 1452: SMTP: From: "Gurpartap Singh" <gurpartap@patriots.in>
+08:06:10.695623 IP 192.168.1.1 > 10.10.1.4: ICMP 74.53.140.153 unreachable - need to frag (mtu 1492), length 556
+08:06:10.696248 IP 192.168.1.1 > 10.10.1.4: ICMP 74.53.140.153 unreachable - need to frag (mtu 1492), length 556
+08:06:10.696634 IP 192.168.1.1 > 10.10.1.4: ICMP 74.53.140.153 unreachable - need to frag (mtu 1492), length 556
+08:06:11.104941 IP 74.53.140.153.25 > 10.10.1.4.1470: Flags [.], ack 1603, win 8712, length 0
+08:06:11.104972 IP 10.10.1.4.1470 > 74.53.140.153.25: Flags [.], seq 1603:3055, ack 463, win 65073, length 1452: SMTP: -microsoft-com:office:word" =
+08:06:11.104998 IP 10.10.1.4.1470 > 74.53.140.153.25: Flags [.], seq 3055:4507, ack 463, win 65073, length 1452: SMTP: ass=3DSection1>
+08:06:11.469723 IP 74.53.140.153.25 > 10.10.1.4.1470: Flags [.], ack 3055, win 11616, length 0
+08:06:11.469759 IP 10.10.1.4.1470 > 74.53.140.153.25: Flags [.], seq 4507:5959, ack 463, win 65073, length 1452: SMTP: ,=20
+08:06:11.469814 IP 10.10.1.4.1470 > 74.53.140.153.25: Flags [.], seq 5959:7411, ack 463, win 65073, length 1452: SMTP: ll can be overriden by using "-c" command line parameter).
+08:06:11.494167 IP 74.53.140.153.25 > 10.10.1.4.1470: Flags [.], ack 4507, win 14520, length 0
+08:06:11.494181 IP 10.10.1.4.1470 > 74.53.140.153.25: Flags [P.], seq 7411:8863, ack 463, win 65073, length 1452: SMTP:  "Classes" toolbar
+08:06:11.494199 IP 10.10.1.4.1470 > 74.53.140.153.25: Flags [.], seq 8863:10315, ack 463, win 65073, length 1452: SMTP: dded support for macros in the "default source code" (Tools/Editor =
+08:06:11.834595 IP 74.53.140.153.25 > 10.10.1.4.1470: Flags [.], ack 5959, win 17424, length 0
+08:06:11.834628 IP 10.10.1.4.1470 > 74.53.140.153.25: Flags [.], seq 10315:11767, ack 463, win 65073, length 1452: SMTP: port for the '::' member access operator in code-completion
+08:06:11.834655 IP 10.10.1.4.1470 > 74.53.140.153.25: Flags [.], seq 11767:13219, ack 463, win 65073, length 1452: SMTP: re.
+08:06:11.858301 IP 74.53.140.153.25 > 10.10.1.4.1470: Flags [.], ack 7411, win 20328, length 0
+08:06:11.858316 IP 10.10.1.4.1470 > 74.53.140.153.25: Flags [.], seq 13219:14671, ack 463, win 65073, length 1452: SMTP: les (disabled - work =
+08:06:11.858334 IP 10.10.1.4.1470 > 74.53.140.153.25: Flags [P.], seq 14671:14700, ack 463, win 65073, length 29: SMTP: 04_01CA45B0.095693F0--
+08:06:11.881223 IP 74.53.140.153.25 > 10.10.1.4.1470: Flags [.], ack 8863, win 23232, length 0
+08:06:11.905583 IP 74.53.140.153.25 > 10.10.1.4.1470: Flags [.], ack 10315, win 26136, length 0
+08:06:12.200179 IP 74.53.140.153.25 > 10.10.1.4.1470: Flags [.], ack 11767, win 29040, length 0
+08:06:12.222746 IP 74.53.140.153.25 > 10.10.1.4.1470: Flags [.], ack 13219, win 31944, length 0
+08:06:12.246844 IP 74.53.140.153.25 > 10.10.1.4.1470: Flags [.], ack 14671, win 34848, length 0
+08:06:12.248291 IP 74.53.140.153.25 > 10.10.1.4.1470: Flags [.], ack 14700, win 34848, length 0
+08:06:12.248789 IP 74.53.140.153.25 > 10.10.1.4.1470: Flags [P.], seq 463:491, ack 14700, win 34848, length 28: SMTP: 250 OK id=1Mugho-0003Dg-Un
+08:06:12.387595 IP 10.10.1.4.1470 > 74.53.140.153.25: Flags [.], ack 491, win 65045, length 0
+08:06:14.763825 IP 10.10.1.4.1470 > 74.53.140.153.25: Flags [P.], seq 14700:14706, ack 491, win 65045, length 6: SMTP: QUIT
+08:06:14.764576 IP 10.10.1.4.1470 > 74.53.140.153.25: Flags [F.], seq 14706, ack 491, win 65045, length 0
+08:06:15.105467 IP 74.53.140.153.25 > 10.10.1.4.1470: Flags [P.], seq 491:539, ack 14706, win 34848, length 48: SMTP: 221 xc90.websitewelcome.com closing connection
+08:06:15.105999 IP 74.53.140.153.25 > 10.10.1.4.1470: Flags [F.], seq 539, ack 14706, win 34848, length 0
+08:06:15.106015 IP 10.10.1.4.1470 > 74.53.140.153.25: Flags [.], ack 540, win 64997, length 0
+08:06:15.106759 IP 74.53.140.153.25 > 10.10.1.4.1470: Flags [.], ack 14707, win 34848, length 0
+08:06:16.690444 IP 10.10.1.20.138 > 10.10.1.255.138: UDP, length 201

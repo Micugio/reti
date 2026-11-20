@@ -1,0 +1,93 @@
+reading from file telnet/telnet-cooked.pcap, link-type EN10MB (Ethernet)
+03:12:38.387203 IP 192.168.0.2.1550 > 192.168.0.1.23: Flags [S], seq 2579865836, win 32120, options [mss 1460,sackOK,TS val 10233636 ecr 0,nop,wscale 0], length 0
+03:12:38.389728 IP 192.168.0.1.23 > 192.168.0.2.1550: Flags [S.], seq 401695549, ack 2579865837, win 17376, options [mss 1448,nop,wscale 0,nop,nop,TS val 2467372 ecr 10233636], length 0
+03:12:38.389775 IP 192.168.0.2.1550 > 192.168.0.1.23: Flags [.], ack 1, win 32120, options [nop,nop,TS val 10233636 ecr 2467372], length 0
+03:12:38.391363 IP 192.168.0.2.1550 > 192.168.0.1.23: Flags [P.], seq 1:28, ack 1, win 32120, options [nop,nop,TS val 10233636 ecr 2467372], length 27 [telnet DO SUPPRESS GO AHEAD, WILL TERMINAL TYPE, WILL NAWS, WILL TSPEED, WILL LFLOW, WILL LINEMODE, WILL NEW-ENVIRON, DO STATUS, WILL XDISPLOC]
+03:12:38.537538 IP 192.168.0.1.23 > 192.168.0.2.1550: Flags [P.], seq 1:4, ack 28, win 17349, options [nop,nop,TS val 2467372 ecr 10233636], length 3 [telnet DO AUTHENTICATION]
+03:12:38.537605 IP 192.168.0.2.1550 > 192.168.0.1.23: Flags [.], ack 4, win 32120, options [nop,nop,TS val 10233651 ecr 2467372], length 0
+03:12:38.537777 IP 192.168.0.2.1550 > 192.168.0.1.23: Flags [P.], seq 28:31, ack 4, win 32120, options [nop,nop,TS val 10233651 ecr 2467372], length 3 [telnet WONT AUTHENTICATION]
+03:12:38.539149 IP 192.168.0.1.23 > 192.168.0.2.1550: Flags [.], ack 31, win 17376, options [nop,nop,TS val 2467372 ecr 10233651], length 0
+03:12:38.540860 IP 192.168.0.1.23 > 192.168.0.2.1550: Flags [P.], seq 4:29, ack 31, win 17376, options [nop,nop,TS val 2467372 ecr 10233651], length 25 [telnet WILL SUPPRESS GO AHEAD, DO TERMINAL TYPE, DO NAWS, DO TSPEED, DO LFLOW, DO LINEMODE, SB LINEMODE SEND 0xb SE]
+03:12:38.541068 IP 192.168.0.2.1550 > 192.168.0.1.23: Flags [P.], seq 31:95, ack 29, win 32120, options [nop,nop,TS val 10233651 ecr 2467372], length 64 [telnet SB NAWS IS 0x50 0 0x20 SE, SB LINEMODE 0x3 0x1 0 0 0x3 0x62 0x3 0x4 0x2 0xf 0x5 0 0 0x7 0x62 0x1c 0x8 0x2 0x4 0x9 0x42 0x1a 0xa 0x2 0x7f 0xb 0x2 0x15 0xf 0x2 0x11 0x10 0x2 0x13 0x11 0 0 0x12 0 0 SE, DO SUPPRESS GO AHEAD, SB LINEMODE SEND 0xf SE]
+03:12:38.542187 IP 192.168.0.1.23 > 192.168.0.2.1550: Flags [.], ack 95, win 17312, options [nop,nop,TS val 2467372 ecr 10233651], length 0
+03:12:38.542780 IP 192.168.0.1.23 > 192.168.0.2.1550: Flags [P.], seq 29:47, ack 95, win 17312, options [nop,nop,TS val 2467372 ecr 10233651], length 18 [telnet DO NEW-ENVIRON, WILL STATUS, DO XDISPLOC, WILL ENCRYPT, DO ENCRYPT, DO OLD-ENVIRON]
+03:12:38.542859 IP 192.168.0.2.1550 > 192.168.0.1.23: Flags [P.], seq 95:104, ack 47, win 32120, options [nop,nop,TS val 10233651 ecr 2467372], length 9 [telnet DONT ENCRYPT, WONT ENCRYPT, WONT OLD-ENVIRON]
+03:12:38.543849 IP 192.168.0.1.23 > 192.168.0.2.1550: Flags [.], ack 104, win 17367, options [nop,nop,TS val 2467372 ecr 10233651], length 0
+03:12:38.546219 IP 192.168.0.1.23 > 192.168.0.2.1550: Flags [P.], seq 47:71, ack 104, win 17376, options [nop,nop,TS val 2467372 ecr 10233651], length 24 [telnet SB TSPEED SEND SE, SB XDISPLOC SEND SE, SB NEW-ENVIRON SEND SE, SB TERMINAL TYPE SEND SE]
+03:12:38.546430 IP 192.168.0.2.1550 > 192.168.0.1.23: Flags [.], ack 71, win 32120, options [nop,nop,TS val 10233652 ecr 2467372], length 0
+03:12:38.547047 IP 192.168.0.2.1550 > 192.168.0.1.23: Flags [P.], seq 104:189, ack 71, win 32120, options [nop,nop,TS val 10233652 ecr 2467372], length 85 [telnet SB TSPEED IS 0x39 0x36 0x30 0x30 0x2c 0x39 0x36 0x30 0x30 SE, SB XDISPLOC IS 0x62 0x61 0x6d 0x2e 0x7a 0x69 0x6e 0x67 0x2e 0x6f 0x72 0x67 0x3a 0x30 0x2e 0x30 SE, SB NEW-ENVIRON IS 0 0x44 0x49 0x53 0x50 0x4c 0x41 0x59 0x1 0x62 0x61 0x6d 0x2e 0x7a 0x69 0x6e 0x67 0x2e 0x6f 0x72 0x67 0x3a 0x30 0x2e 0x30 SE, SB TERMINAL TYPE IS 0x78 0x74 0x65 0x72 0x6d 0x2d 0x63 0x6f 0x6c 0x6f 0x72 SE]
+03:12:38.548221 IP truncated-ip - 85 bytes missing! 192.168.0.2.1550 > 192.168.0.1.23: Flags [P.], seq 104:189, ack 71, win 32120, options [nop,nop,TS val 10233652 ecr 2467372], length 85 [|telnet]
+03:12:38.568470 IP 192.168.0.1.23 > 192.168.0.2.1550: Flags [P.], seq 71:74, ack 189, win 17376, options [nop,nop,TS val 2467372 ecr 10233652], length 3 [telnet DO ECHO]
+03:12:38.568581 IP 192.168.0.2.1550 > 192.168.0.1.23: Flags [P.], seq 189:192, ack 74, win 32120, options [nop,nop,TS val 10233654 ecr 2467372], length 3 [telnet WONT ECHO]
+03:12:38.569718 IP 192.168.0.1.23 > 192.168.0.2.1550: Flags [.], ack 192, win 17373, options [nop,nop,TS val 2467372 ecr 10233654], length 0
+03:12:38.583509 IP 192.168.0.1.23 > 192.168.0.2.1550: Flags [P.], seq 74:86, ack 192, win 17376, options [nop,nop,TS val 2467372 ecr 10233654], length 12 [telnet WILL ECHO, SB LFLOW INFO SE, WONT ECHO]
+03:12:38.583630 IP 192.168.0.2.1550 > 192.168.0.1.23: Flags [P.], seq 192:198, ack 86, win 32120, options [nop,nop,TS val 10233655 ecr 2467372], length 6 [telnet DO ECHO, DONT ECHO]
+03:12:38.584705 IP 192.168.0.1.23 > 192.168.0.2.1550: Flags [.], ack 198, win 17370, options [nop,nop,TS val 2467372 ecr 10233655], length 0
+03:12:38.585489 IP 192.168.0.1.23 > 192.168.0.2.1550: Flags [P.], seq 86:101, ack 198, win 17370, options [nop,nop,TS val 2467372 ecr 10233655], length 15 [telnet SB LINEMODE 0x3 0x5 0x80 0 0x11 0x80 0 0x12 0x80 0 SE]
+03:12:38.596419 IP 192.168.0.2.1550 > 192.168.0.1.23: Flags [.], ack 101, win 32120, options [nop,nop,TS val 10233657 ecr 2467372], length 0
+03:12:38.597730 IP 192.168.0.1.23 > 192.168.0.2.1550: Flags [P.], seq 101:133, ack 198, win 17376, options [nop,nop,TS val 2467372 ecr 10233657], length 32
+03:12:38.616442 IP 192.168.0.2.1550 > 192.168.0.1.23: Flags [.], ack 133, win 32120, options [nop,nop,TS val 10233659 ecr 2467372], length 0
+03:12:39.705066 IP 192.168.0.1.23 > 192.168.0.2.1550: Flags [P.], seq 133:140, ack 198, win 17376, options [nop,nop,TS val 2467374 ecr 10233659], length 7
+03:12:39.716432 IP 192.168.0.2.1550 > 192.168.0.1.23: Flags [.], ack 140, win 32120, options [nop,nop,TS val 10233769 ecr 2467374], length 0
+03:12:40.949196 IP 192.168.0.2.1550 > 192.168.0.1.23: Flags [P.], seq 198:204, ack 140, win 32120, options [nop,nop,TS val 10233892 ecr 2467374], length 6
+03:12:40.950568 IP truncated-ip - 6 bytes missing! 192.168.0.2.1550 > 192.168.0.1.23: Flags [P.], seq 198:204, ack 140, win 32120, options [nop,nop,TS val 10233892 ecr 2467374], length 6 [|telnet]
+03:12:40.962649 IP 192.168.0.1.23 > 192.168.0.2.1550: Flags [P.], seq 140:143, ack 204, win 17376, options [nop,nop,TS val 2467377 ecr 10233892], length 3 [telnet WILL ECHO]
+03:12:40.962801 IP 192.168.0.2.1550 > 192.168.0.1.23: Flags [P.], seq 204:207, ack 143, win 32120, options [nop,nop,TS val 10233893 ecr 2467377], length 3 [telnet DO ECHO]
+03:12:40.963879 IP 192.168.0.1.23 > 192.168.0.2.1550: Flags [.], ack 207, win 17373, options [nop,nop,TS val 2467377 ecr 10233893], length 0
+03:12:40.964875 IP 192.168.0.1.23 > 192.168.0.2.1550: Flags [P.], seq 143:152, ack 207, win 17376, options [nop,nop,TS val 2467377 ecr 10233893], length 9
+03:12:40.976432 IP 192.168.0.2.1550 > 192.168.0.1.23: Flags [.], ack 152, win 32120, options [nop,nop,TS val 10233895 ecr 2467377], length 0
+03:12:41.968708 IP 192.168.0.2.1550 > 192.168.0.1.23: Flags [P.], seq 207:213, ack 152, win 32120, options [nop,nop,TS val 10233994 ecr 2467377], length 6
+03:12:41.970016 IP 192.168.0.1.23 > 192.168.0.2.1550: Flags [.], ack 213, win 17376, options [nop,nop,TS val 2467379 ecr 10233994], length 0
+03:12:42.234355 IP 192.168.0.1.23 > 192.168.0.2.1550: Flags [P.], seq 152:154, ack 213, win 17376, options [nop,nop,TS val 2467380 ecr 10233994], length 2
+03:12:42.246453 IP 192.168.0.2.1550 > 192.168.0.1.23: Flags [.], ack 154, win 32120, options [nop,nop,TS val 10234022 ecr 2467380], length 0
+03:12:42.247616 IP 192.168.0.1.23 > 192.168.0.2.1550: Flags [P.], seq 154:157, ack 213, win 17376, options [nop,nop,TS val 2467380 ecr 10234022], length 3 [telnet WONT ECHO]
+03:12:42.247774 IP 192.168.0.2.1550 > 192.168.0.1.23: Flags [P.], seq 213:216, ack 157, win 32120, options [nop,nop,TS val 10234022 ecr 2467380], length 3 [telnet DONT ECHO]
+03:12:42.249163 IP 192.168.0.1.23 > 192.168.0.2.1550: Flags [.], ack 216, win 17373, options [nop,nop,TS val 2467380 ecr 10234022], length 0
+03:12:43.528695 IP 192.168.0.1.23 > 192.168.0.2.1550: Flags [P.], seq 157:217, ack 216, win 17376, options [nop,nop,TS val 2467382 ecr 10234022], length 60
+03:12:43.546441 IP 192.168.0.2.1550 > 192.168.0.1.23: Flags [.], ack 217, win 32120, options [nop,nop,TS val 10234152 ecr 2467382], length 0
+03:12:43.548353 IP 192.168.0.1.23 > 192.168.0.2.1550: Flags [P.], seq 217:705, ack 216, win 17376, options [nop,nop,TS val 2467382 ecr 10234152], length 488
+03:12:43.566442 IP 192.168.0.2.1550 > 192.168.0.1.23: Flags [.], ack 705, win 32120, options [nop,nop,TS val 10234154 ecr 2467382], length 0
+03:12:43.585871 IP 192.168.0.1.23 > 192.168.0.2.1550: Flags [P.], seq 705:707, ack 216, win 17376, options [nop,nop,TS val 2467382 ecr 10234154], length 2
+03:12:43.596432 IP 192.168.0.2.1550 > 192.168.0.1.23: Flags [.], ack 707, win 32120, options [nop,nop,TS val 10234157 ecr 2467382], length 0
+03:12:58.295480 IP 192.168.0.2.1550 > 192.168.0.1.23: Flags [P.], seq 216:242, ack 707, win 32120, options [nop,nop,TS val 10235626 ecr 2467382], length 26
+03:12:58.297120 IP truncated-ip - 26 bytes missing! 192.168.0.2.1550 > 192.168.0.1.23: Flags [P.], seq 216:242, ack 707, win 32120, options [nop,nop,TS val 10235626 ecr 2467382], length 26 [|telnet]
+03:12:58.666433 IP 192.168.0.2.1550 > 192.168.0.1.23: Flags [P.], seq 216:242, ack 707, win 32120, options [nop,nop,TS val 10235664 ecr 2467382], length 26
+03:12:58.667588 IP 192.168.0.1.23 > 192.168.0.2.1550: Flags [.], ack 242, win 17376, options [nop,nop,TS val 2467412 ecr 10235664], length 0
+03:12:58.701179 IP 192.168.0.1.23 > 192.168.0.2.1550: Flags [P.], seq 707:758, ack 242, win 17376, options [nop,nop,TS val 2467412 ecr 10235664], length 51
+03:12:58.716445 IP 192.168.0.2.1550 > 192.168.0.1.23: Flags [.], ack 758, win 32120, options [nop,nop,TS val 10235669 ecr 2467412], length 0
+03:12:58.774496 IP 192.168.0.1.23 > 192.168.0.2.1550: Flags [P.], seq 758:822, ack 242, win 17376, options [nop,nop,TS val 2467413 ecr 10235669], length 64
+03:12:58.786454 IP 192.168.0.2.1550 > 192.168.0.1.23: Flags [.], ack 822, win 32120, options [nop,nop,TS val 10235676 ecr 2467413], length 0
+03:12:59.771591 IP 192.168.0.1.23 > 192.168.0.2.1550: Flags [P.], seq 822:886, ack 242, win 17376, options [nop,nop,TS val 2467415 ecr 10235676], length 64
+03:12:59.786445 IP 192.168.0.2.1550 > 192.168.0.1.23: Flags [.], ack 886, win 32120, options [nop,nop,TS val 10235776 ecr 2467415], length 0
+03:13:00.770394 IP 192.168.0.1.23 > 192.168.0.2.1550: Flags [P.], seq 886:950, ack 242, win 17376, options [nop,nop,TS val 2467417 ecr 10235776], length 64
+03:13:00.786443 IP 192.168.0.2.1550 > 192.168.0.1.23: Flags [.], ack 950, win 32120, options [nop,nop,TS val 10235876 ecr 2467417], length 0
+03:13:01.771781 IP 192.168.0.1.23 > 192.168.0.2.1550: Flags [P.], seq 950:1014, ack 242, win 17376, options [nop,nop,TS val 2467419 ecr 10235876], length 64
+03:13:01.786445 IP 192.168.0.2.1550 > 192.168.0.1.23: Flags [.], ack 1014, win 32120, options [nop,nop,TS val 10235976 ecr 2467419], length 0
+03:13:02.773461 IP 192.168.0.1.23 > 192.168.0.2.1550: Flags [P.], seq 1014:1078, ack 242, win 17376, options [nop,nop,TS val 2467421 ecr 10235976], length 64
+03:13:02.786452 IP 192.168.0.2.1550 > 192.168.0.1.23: Flags [.], ack 1078, win 32120, options [nop,nop,TS val 10236076 ecr 2467421], length 0
+03:13:03.768817 IP 192.168.0.1.23 > 192.168.0.2.1550: Flags [P.], seq 1078:1142, ack 242, win 17376, options [nop,nop,TS val 2467423 ecr 10236076], length 64
+03:13:03.786441 IP 192.168.0.2.1550 > 192.168.0.1.23: Flags [.], ack 1142, win 32120, options [nop,nop,TS val 10236176 ecr 2467423], length 0
+03:13:04.205415 IP 192.168.0.2.1550 > 192.168.0.1.23: Flags [P.], seq 242:247, ack 1142, win 32120, options [nop,nop,TS val 10236217 ecr 2467423], length 5 [telnet IP, DO TIMING MARK]
+03:13:04.206739 IP truncated-ip - 5 bytes missing! 192.168.0.2.1550 > 192.168.0.1.23: Flags [P.], seq 242:247, ack 1142, win 32120, options [nop,nop,TS val 10236217 ecr 2467423], length 5 [|telnet]
+03:13:04.218707 IP 192.168.0.1.23 > 192.168.0.2.1550: Flags [P.], seq 1142:1145, ack 247, win 17376, options [nop,nop,TS val 2467423 ecr 10236217], length 3 [telnet WILL TIMING MARK]
+03:13:04.220058 IP 192.168.0.1.23 > 192.168.0.2.1550: Flags [P.U], seq 1145:1146, ack 247, win 17376, urg 1, options [nop,nop,TS val 2467423 ecr 10236217], length 1
+03:13:04.220780 IP 192.168.0.1.23 > 192.168.0.2.1550: Flags [P.], seq 1146:1147, ack 247, win 17376, options [nop,nop,TS val 2467423 ecr 10236217], length 1
+03:13:04.236421 IP 192.168.0.2.1550 > 192.168.0.1.23: Flags [.], ack 1147, win 32120, options [nop,nop,TS val 10236221 ecr 2467423], length 0
+03:13:04.237834 IP 192.168.0.1.23 > 192.168.0.2.1550: Flags [P.], seq 1147:1299, ack 247, win 17376, options [nop,nop,TS val 2467423 ecr 10236221], length 152
+03:13:04.256443 IP 192.168.0.2.1550 > 192.168.0.1.23: Flags [.], ack 1299, win 32120, options [nop,nop,TS val 10236223 ecr 2467423], length 0
+03:13:05.260561 IP 192.168.0.2.1550 > 192.168.0.1.23: Flags [P.], seq 247:251, ack 1299, win 32120, options [nop,nop,TS val 10236323 ecr 2467423], length 4
+03:13:05.261884 IP truncated-ip - 4 bytes missing! 192.168.0.2.1550 > 192.168.0.1.23: Flags [P.], seq 247:251, ack 1299, win 32120, options [nop,nop,TS val 10236323 ecr 2467423], length 4 [|telnet]
+03:13:05.299376 IP 192.168.0.1.23 > 192.168.0.2.1550: Flags [P.], seq 1299:1301, ack 251, win 17376, options [nop,nop,TS val 2467426 ecr 10236323], length 2
+03:13:05.316431 IP 192.168.0.2.1550 > 192.168.0.1.23: Flags [.], ack 1301, win 32120, options [nop,nop,TS val 10236329 ecr 2467426], length 0
+03:13:14.097376 IP 192.168.0.2.1550 > 192.168.0.1.23: Flags [P.], seq 251:258, ack 1301, win 32120, options [nop,nop,TS val 10237207 ecr 2467426], length 7
+03:13:14.098914 IP 192.168.0.1.23 > 192.168.0.2.1550: Flags [.], ack 258, win 17376, options [nop,nop,TS val 2467443 ecr 10237207], length 0
+03:13:14.274496 IP 192.168.0.1.23 > 192.168.0.2.1550: Flags [P.], seq 1301:1370, ack 258, win 17376, options [nop,nop,TS val 2467444 ecr 10237207], length 69
+03:13:14.286455 IP 192.168.0.2.1550 > 192.168.0.1.23: Flags [.], ack 1370, win 32120, options [nop,nop,TS val 10237226 ecr 2467444], length 0
+03:13:14.287691 IP 192.168.0.1.23 > 192.168.0.2.1550: Flags [P.], seq 1370:1372, ack 258, win 17376, options [nop,nop,TS val 2467444 ecr 10237226], length 2
+03:13:14.306430 IP 192.168.0.2.1550 > 192.168.0.1.23: Flags [.], ack 1372, win 32120, options [nop,nop,TS val 10237228 ecr 2467444], length 0
+03:13:17.940748 IP 192.168.0.2.1550 > 192.168.0.1.23: Flags [P.], seq 258:264, ack 1372, win 32120, options [nop,nop,TS val 10237591 ecr 2467444], length 6
+03:13:17.942532 IP 192.168.0.1.23 > 192.168.0.2.1550: Flags [.], ack 264, win 17376, options [nop,nop,TS val 2467451 ecr 10237591], length 0
+03:13:17.956973 IP 192.168.0.1.23 > 192.168.0.2.1550: Flags [F.], seq 1372, ack 264, win 17376, options [nop,nop,TS val 2467451 ecr 10237591], length 0
+03:13:17.956998 IP 192.168.0.2.1550 > 192.168.0.1.23: Flags [.], ack 1373, win 32120, options [nop,nop,TS val 10237593 ecr 2467451], length 0
+03:13:17.957149 IP 192.168.0.2.1550 > 192.168.0.1.23: Flags [F.], seq 264, ack 1373, win 32120, options [nop,nop,TS val 10237593 ecr 2467451], length 0
+03:13:17.958477 IP 192.168.0.1.23 > 192.168.0.2.1550: Flags [.], ack 265, win 17375, options [nop,nop,TS val 2467451 ecr 10237593], length 0
