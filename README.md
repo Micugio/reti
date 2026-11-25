@@ -39,6 +39,8 @@ The slides are in `lab4-dns-http/slides.pdf` and `lab5-dns-http-routed/slides.pd
 ```bash
 kathara lstart --noterminals   # start the lab in the current folder
 kathara lclean                 # stop the lab
+./start-lab.sh                 # script per avviare lab (NOTA: contiene già "kathara lstart --noterminals")
+./stop-lab.sh                  # script per fermare lab (NOTA: contiene già "kathara lclean")
 kathara list                   # lista di pc nella cartella corrente
 kathara connect pc1            # open a terminal on pc1
 nslookup google.com            # indirizzi ip di google
